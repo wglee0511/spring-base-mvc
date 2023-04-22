@@ -2,12 +2,13 @@ package springstart.springstart.MemberService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import springstart.springstart.MemberRepository.MemberRepository;
-import springstart.springstart.MemberRepository.MemoryMemberRepository;
 import springstart.springstart.domain.Member;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;
