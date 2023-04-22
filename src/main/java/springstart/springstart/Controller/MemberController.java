@@ -37,7 +37,7 @@ public class MemberController {
     public String viewMemberList(Model model){
         List<Member> members = memberService.findMembers();
         model.addAttribute("members", members);
-        model.addAttribute("members", members);3
+        model.addAttribute("members", members);
 
         return "members/memberList";
     }
